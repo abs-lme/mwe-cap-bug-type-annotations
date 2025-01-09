@@ -50,7 +50,7 @@ annotate db.Reusable with {
 
 ```xml
 <Annotations Target="srv.TestService.Test/test_value">
-    <Annotation Term="Common.Text" Path="name">
+    <Annotation Term="Common.Text" Path="name"> <!-- name (which does not exist in entity Test) -->
         <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
     </Annotation>
     <Annotation Term="Common.Label" String="Value"/>
@@ -77,7 +77,7 @@ annotate db.Reusable with {
 
 ```xml
 <Annotations Target="srv.TestService.Test/test_value">
-    <Annotation Term="Common.Text" Path="name">
+    <Annotation Term="Common.Text" Path="test_name"> <!-- test_name, correctly prefixed -->
         <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
     </Annotation>
     <Annotation Term="Common.Label" String="Value"/>
@@ -107,7 +107,7 @@ annotate db.Reusable with {
 
 ```xml
 <Annotations Target="srv.TestService.Test/test_value">
-    <Annotation Term="Common.Text" Path="name">
+    <Annotation Term="Common.Text" Path="test_name"> <!-- test_name, correctly prefixed -->
         <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
     </Annotation>
     <Annotation Term="Common.Label" String="Value"/>
