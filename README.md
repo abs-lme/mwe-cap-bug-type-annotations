@@ -9,6 +9,17 @@ There is a single entity `Test` that contains a field `test` of type `Reusable`.
 `Reusable` is a structured type with two properties `value` and `name`.
 The property `name` is configured to be the text for the property `value` (using `Common.Text`).
 
+```cds
+type Reusable {
+    value   : String        @title : 'Value';
+    name    : String        @title : 'Name';
+}
+
+entity Test : cuid {
+    test    : Reusable      @title : 'Test';
+}
+```
+
 There are a few Fiori annotations for a List Report for the `Test` entity.
 
 ## Reproducing the issue
