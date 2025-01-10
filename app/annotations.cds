@@ -11,6 +11,14 @@ annotate db.Reusable with {
     value;
 }
 
+annotate db.Values with {
+    @Common : {
+        Text : text,
+        TextArrangement : #TextFirst,
+    }
+    ID;
+}
+
 annotate db.Test @(
     UI : {
         LineItem  : [

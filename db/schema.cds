@@ -10,3 +10,11 @@ type Reusable {
 entity Test : cuid {
     test    : Reusable      @title : 'Test';
 }
+
+@cds.odata.valuelist
+@cds.autoexpose
+@readonly
+entity Values {
+    key ID      : String    @title : 'Value';
+        text    : String    @title : 'Name';
+}
