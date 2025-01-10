@@ -44,9 +44,9 @@ There are a few Fiori annotations for a List Report for the `Test` entity.
 
 ## Further analysis
 
-There are two problems
+There are two problems resulting from the annotations for the `Reusable` type:
 
-1. The values' text is not displayed.
+1. The values' text is not displayed in list report and object page.
 2. The value is not updated in the field.
 
 ### Problem 1: text not displayed
@@ -110,7 +110,7 @@ This is due to the annotations missing the prefix `test_` of the reusable proper
 </Annotations>
 ```
 
-#### Attempt 3
+#### Attempt 3: manual prefix
 
 > See #1.3 in [`app/annotations.cds`][annotations]
 
