@@ -170,7 +170,7 @@ annotate db.Reusable with {
 }
 ```
 
-This results in the following console error when selecting a value in the edit mode:
+This results in the following browser console error when selecting a value in edit mode:
 
 ![](img/image-3.png)
 
@@ -315,6 +315,6 @@ The resulting metadata contains the correct parameter.
 </Annotations>
 ```
 
-However, this only works if I don't need a custom value mapping. For the app I'm developing, I need a few more parameters for `In` and `Out`, also my value list entities have more than one key property.
+However, this only works if I don't need a custom value mapping. For the app I'm developing, I need a few more parameter mappings for `In` and `Out`, also my value list entities have more than one key property.
 
 [annotations]: app/annotations.cds
